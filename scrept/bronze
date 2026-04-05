@@ -1,1 +1,56 @@
+use datawerehouse
 
+create table Bronze.crm_cust_info(
+cst_id              int;
+cst_key             nvarchar(50);
+cst_firstname       nvarchar(50);
+cst_lastname        nvarchar(50);
+cst_marital_status  nvarchar(50);
+cst_gndr            nvarchar(50);
+cst_create_date     date
+);
+go 
+create table Bronz.crm_prd_info(
+prd_id        int;
+prd_key       nvarchar(50);
+prd_nm        nvarchar(50);
+prd_cost      nvarchar(50);
+prd_line      nvarchar(50);
+prd_start_dt  datetime;
+prd_end_dt    datetime
+);
+go
+
+create table Bronz.crm_sales_details(
+sls_ord_num   nvarchar(50);
+sls_prd_key   nvarchar(50);
+sls_cust_id   int;
+sls_order_dt  int;
+sls_ship_dt	  int;
+sls_sales     int;
+sls_quantity  int;
+sls_price     int
+);
+go
+
+
+create table Bronz.erp_cust_az12(
+cid    nvarchar(50);
+bdate  date;
+gen    nvarchar(50)
+);
+go
+
+
+create table bronze.erb_loc_a101(
+cid    nvarchar(50);
+cntry  nvarchar(50)
+)
+go
+create table bronze.erp_px_cat_g1v2(
+id          nvarchar(50);
+cat         nvarchar(50);
+subcat      nvarchar(50);
+maintenance NVARCHAR(50)
+);
+go
